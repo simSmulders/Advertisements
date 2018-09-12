@@ -4,6 +4,7 @@ import AdController from './advertisements/controller'
 import setupDb from './db'
 
 const app = createKoaServer({
+  cors: true,
   controllers: [
     AdController
   ]
