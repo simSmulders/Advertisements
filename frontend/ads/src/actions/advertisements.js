@@ -20,7 +20,7 @@ export const loadAds = () => (dispatch, getState) => {
   
   request(`${baseUrl}/ads`)
     .then(response => {
-      dispatch(adsFetched(response.body))
+      dispatch(adsFetched(response.body.ads))
     })
     .catch(console.error)
 }

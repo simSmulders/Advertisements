@@ -18,6 +18,6 @@ export default function AdForm(props) {
       <input type="text" name="description" onChange={props.onChange} value={props.values.description} />
     </label> */}
 
-    <button type="submit">Save</button>
+    <button type="submit">Add</button>
   </form>)
 }

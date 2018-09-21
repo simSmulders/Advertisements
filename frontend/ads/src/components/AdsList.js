@@ -10,8 +10,9 @@ export default function AdsList(props) {
           <CssBaseline />
           <h1>Advertisements</h1>
         <ul>
-          { props.ads && props.ads.ads.map(ad => (
-            <li key={ad.id}><Link to={`/ads/${ad.id}`}>{ ad.title }, € {ad.price} </Link></li>
+          { props.ads && props.ads.map(ad => (
+            <li key={ad.id}>
+            <Link to={`/ads/${ad.id}`}>{ ad.title }, € {ad.price} </Link></li>
           )) }
           { !props.ads && <li>Loading...</li> }
         </ul>

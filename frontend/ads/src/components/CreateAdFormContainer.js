@@ -17,7 +17,7 @@ class CreateAdFormContainer extends React.Component {
     this.setState({
       title: '',
       price: 0,
-      description: ''
+    //   description: ''
     })
     this.props.createAd(this.state)
   }
